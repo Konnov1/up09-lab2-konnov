@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from . import hwiews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),
+    path('//', hwiews),
 ]
