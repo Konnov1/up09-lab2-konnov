@@ -5,15 +5,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %} Приложение Django {% endblock %}</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
         <script src="{% static 'js.js' %}" defer></script>
     </head>
     <body>
         <div class="but">
-            <button>Главная страница</button>
-            <button>Обо мне</button>
-            <button>Посты</button>
-            <button>Группы</button>
+            <button id="c">Главная страница</button>
+            <button id="c">Обо мне</button>
+            <button id="c">Посты</button>
+            <button id="c">Группы</button>
         </div>
         <main>{% block content %} {% endblock %}</main>
     </body>
