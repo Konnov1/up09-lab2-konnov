@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <script src="{% static 'css/js.js' %}"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="lab">
-        <h1>Страница обо мне</h1>
-    </div>
+{% extends 'layout.html' %}
 
-</body>
-</html>
+{% block title %}
+    Страница обо мне
+{% endblock %}
+
+{% block content %}
+    <h1>Страница обо мне</h1>
+{% endblock %}
